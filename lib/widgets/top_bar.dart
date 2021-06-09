@@ -14,21 +14,27 @@ class TopBar extends StatelessWidget {
       color: color,
       child: Column(
         children: [
-          CircleAvatar(
-            radius: 80,
-            backgroundImage: NetworkImage(
-                'https://avatars.githubusercontent.com/u/59326665?v=4'),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: Container(
+              width: 150,
+              height: 150,
+              child: Image(
+                image: NetworkImage(
+                    'https://avatars.githubusercontent.com/u/59326665?v=4'),
+              ),
+            ),
           ),
           const SizedBox(
             height: 30,
           ),
           Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 title,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 32,
                   fontWeight: FontWeight.w600,
                   color: Colors.white,
                 ),

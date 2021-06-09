@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
               TopBar(
                 title: 'Basith P',
                 subtitle: 'Flutter Developer',
-                color: Colors.black,
+                color: Color(0xff1A1A1A),
               ),
               const SizedBox(height: 20),
               Padding(
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Projects',
+                      'About Me',
                       style: TextStyle(
                         fontSize: 22,
                         color: Color(0xff0B3D2E),
@@ -41,7 +41,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      'I\'m a Flutter Developer and a Computer Science Sudent',
+                      'I\'m a Flutter Developer and a Computer Science Sudent at KMCT College of Engineering',
+                      style: TextStyle(fontSize: 16),
                     ),
                     const SizedBox(
                       height: 20,
@@ -58,26 +59,77 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              // Card(
-              //   child: Column(
-              //     mainAxisSize: MainAxisSize.min,
-              //     children: <Widget>[
-              //       const ListTile(
-              //         title: Text('Social Media'),
-              //         subtitle: Text('Best of Sonu Nigam Song'),
-              //       ),
-              //     ],
-              //   ),
-              // ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 20.0),
+                height: 120.0,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Card(
+                      color: Colors.black87,
+                      child: Container(
+                        width: 160.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(20),
+                          ),
+                        ),
+                        child: Align(
+                          child: Text(
+                            'Social Media',
+                            style: TextStyle(
+                              fontSize: 22,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      color: Colors.black87,
+                      child: Container(
+                        width: 160.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(20),
+                          ),
+                        ),
+                        child: Align(
+                          child: Text(
+                            'Hobbies',
+                            style: TextStyle(
+                              fontSize: 22,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      color: Colors.black87,
+                      child: Container(
+                        width: 160.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(20),
+                          ),
+                        ),
+                        child: Align(
+                            child: Text(
+                          'Experience',
+                          style: TextStyle(
+                            fontSize: 22,
+                            color: Colors.white,
+                          ),
+                        )),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.of(context).pushNamed(ProfileScreen.routeName);
-        },
-        child: Icon(Icons.edit),
       ),
     );
   }
