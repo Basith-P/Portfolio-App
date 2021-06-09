@@ -72,11 +72,6 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.black87,
                       child: Container(
                         width: 160.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(20),
-                          ),
-                        ),
                         child: Align(
                           child: Text(
                             'Social Media',
@@ -92,11 +87,6 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.black87,
                       child: Container(
                         width: 160.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(20),
-                          ),
-                        ),
                         child: Align(
                           child: Text(
                             'Hobbies',
@@ -112,11 +102,6 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.black87,
                       child: Container(
                         width: 160.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(20),
-                          ),
-                        ),
                         child: Align(
                             child: Text(
                           'Experience',
