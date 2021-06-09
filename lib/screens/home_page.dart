@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               TopBar(
                 title: 'Basith P',
-                subtitle: 'Flutter Developer',
+                subtitle: 'Developer',
                 color: Color(0xff1A1A1A),
               ),
               const SizedBox(height: 20),
@@ -41,8 +41,11 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      'I\'m a Flutter Developer and a Computer Science Sudent at KMCT College of Engineering',
-                      style: TextStyle(fontSize: 16),
+                      'I\'m a Flutter and Python Developer and a Computer Science Sudent at KMCT College of Engineering',
+                      style: TextStyle(
+                        fontSize: 16,
+                        height: 1.5,
+                      ),
                     ),
                     const SizedBox(
                       height: 20,
