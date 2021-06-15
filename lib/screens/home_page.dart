@@ -1,4 +1,5 @@
 import 'package:portfolio/screens/hobbies.dart';
+import 'package:portfolio/screens/social_page.dart';
 import 'package:portfolio/widgets/top_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -70,8 +71,12 @@ class _HomePageState extends State<HomePage> {
                   children: <Widget>[
                     InkWell(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Hobbies()));
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Social(),
+                          ),
+                        );
                       },
                       child: Card(
                         color: Colors.black87,
