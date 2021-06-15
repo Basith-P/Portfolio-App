@@ -1,4 +1,4 @@
-import 'package:portfolio/screens/profile_page.dart';
+import 'package:portfolio/screens/hobbies.dart';
 import 'package:portfolio/widgets/top_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -68,31 +68,43 @@ class _HomePageState extends State<HomePage> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    Card(
-                      color: Colors.black87,
-                      child: Container(
-                        width: 160.0,
-                        child: Align(
-                          child: Text(
-                            'Social Media',
-                            style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.white,
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Hobbies()));
+                      },
+                      child: Card(
+                        color: Colors.black87,
+                        child: Container(
+                          width: 160.0,
+                          child: Align(
+                            child: Text(
+                              'Social Media',
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
-                    Card(
-                      color: Colors.black87,
-                      child: Container(
-                        width: 160.0,
-                        child: Align(
-                          child: Text(
-                            'Hobbies',
-                            style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.white,
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Hobbies()));
+                      },
+                      child: Card(
+                        color: Colors.black87,
+                        child: Container(
+                          width: 160.0,
+                          child: Align(
+                            child: Text(
+                              'Hobbies',
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
